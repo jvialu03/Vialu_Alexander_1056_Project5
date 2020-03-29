@@ -12,3 +12,259 @@ img, embed, object, video {
 html {
   box-sizing: border-box;
 }
+
+a {
+  color:#fff;
+  text-decoration: none;
+}
+
+h2, h3 {
+  color: #fff;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+#mainHeader {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  max-width: 1423px;
+  margin: 0 auto;
+}
+
+#mainNav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+#mainNav button {
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#burgerCon {
+  display: none; /* hide initially */
+  margin-top: 20px; /* bump menu below 3 times */
+  background: #000;
+}
+
+#burgerCon.slideToggle {
+  display: block;
+}
+
+#mainNav button {
+  background: url(../images/burger_menu.svg) center no-repeat;
+  border: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+#mainNav button.expanded {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#mainNav li a {
+  /* anchor tags are inline by default, set to block so we can add padding */
+  display: block;
+  color: #fff;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+#logo {
+  background: #3e3e3e;
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#logo h3 {
+  text-align: center;
+  line-height: 160px;
+}
+
+#contactMsg {
+  background: #000;
+  max-width: 1423px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+
+#contactMsg h2 {
+  text-align: center;
+  line-height: 276px;
+}
+
+#contactInfos {
+  margin-bottom: 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#map {
+  background: #000;
+  width: 400px;
+  height: 455px;
+  margin-bottom: 20px;
+}
+
+#map h3 {
+  text-align: center;
+  line-height: 455px;
+}
+
+#form {
+  background: #000;
+  width: 400px;
+  height: 309px;
+  margin-bottom: 20px;
+}
+
+#form h3 {
+  text-align: center;
+  line-height: 309px;
+}
+
+#footerImage {
+  background: #000;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#footerImage h3 {
+  text-align: center;
+  line-height: 250px;
+}
+
+#footerPopup {
+  background: #3e3e3e;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#footerPopup h3 {
+  text-align: center;
+  line-height: 90px;
+}
+
+@media screen and (min-width: 51.06em) {
+  #contactInfos {
+    flex-direction: row;
+    max-width: 1423px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  #logo h3 {
+    line-height: 120px;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  #mainHeader {
+    display: flex;
+  }
+
+  #button {
+    display: none;
+  }
+
+  #burgerCon {
+    display: block;
+    background: #fff;
+    margin-top: 198px;
+    margin-bottom: 24px;
+  }
+
+  #mainNav {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  #mainNav li {
+    display: inline;
+    margin-left: 20px;
+  }
+
+  #mainNav li a {
+    background-color: #fff;
+    display: inline;
+    color: #000;
+  }
+
+  #logo {
+    order: -1;
+    width: 190px;
+    height: 190px;
+    margin: 0;
+    margin-top: 38px;
+  }
+
+  #logo h3 {
+    line-height: 190px;
+  }
+
+  #contactInfos {
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+
+  #contactMsg {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (min-width: 84.37em) {
+  #map {
+    width: 665px;
+    height: 665px;
+  }
+
+  #map h3 {
+    line-height: 665px;
+  }
+
+  #form {
+    width: 665px;
+    height: 455px;
+  }
+
+  #form h3 {
+    line-height: 455px;
+  }
+
+  #footerImage {
+    height: 321px;
+  }
+
+  #footerPopup {
+    height: 116px;
+  }
+}
